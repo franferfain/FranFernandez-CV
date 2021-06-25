@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Francisco Fernandez - CV - </title>
+	<title id:#>Francisco Fernandez - CV - </title>
 
 	<meta name="viewport" content="width=device-width"/>
 	<meta name="description" content="The Curriculum Vitae of Francisco Fernandez."/>
 	<meta charset="UTF-8">
+
+	
 	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 	<link type="text/css" rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Source+Code+Pro" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<script src="cv.js"></script>
+
 </head>
 <body id="top">
+
+
 	<div id="cv" class="instaFade">
 		<div class="mainDetails">
 			<div id="headshot" class="quickFade">
 				<img src="headshot.jpg" alt="Francisco Fernandez profile picture" />
 			</div>
+	
+				
+			
 			<div id="name">
 				<h1 class="quickFade delayTwo">Francisco Fernandez</h1>
-				<h2 class="quickFade delayThree">Developer en formación</h2>
+				<h2 class="quickFade delayThree">Developer</h2>
+				<a class="btn btn-social-icon btn-github" href="https://github.com/franferfain" target="_blank">
+					<span class="fa fa-github"></span>
+				</a>
+				<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/francisco-fernandez-788b67142/" target="_blank">
+					<span class="fa fa-linkedin"></span>
+				</a>
+				<a class="btn btn-social-icon btn-envelope" href="mailto:franferfain@gmail.com" target="newtab">
+					<span class="fa fa-envelope"></span>
+				</a>
 			</div>
 
 			<div id="contactDetails" class="quickFade delayFour">
 				<ul>
-					<li>e: <a href="mailto:franferfain@gmail.com" target="_blank">franferfain@gmail.com</a></li>
-					<li>w: <a href="https://franferfain.github.io/" target="_blank">franferfain.github.io</a></li>
+					<!-- <li>e: <a href="mailto:franferfain@gmail.com" target="_blank">franferfain@gmail.com</a></li>
+					<li>w: <a href="https://franferfain.github.io/" target="_blank">https://github.com/franferfain</a></li> -->
+					<li>
+						<div class="form-check form-switch">
+							<button class="btn-primary btn-block" onclick="darkMode()"> Dark Mode </button>
+						</div>
+					</li>
+						<div class="form-check form-switch">
+							<button class="btn-primary btn-block" onclick="english()">English Version</button>
+						</div>
+					</li>
 				</ul>
+				
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -39,9 +66,14 @@
 					<div class="sectionTitle">
 						<h1>Información personal</h1>
 					</div>
-					<div class="sectionContent">
+					<div id="spanish" class="sectionContent">
 						<p> Disfruto el trabajo en equipo, soy amigable y honesto; colaboro con mis compañeros y tomo la iniciativa frente a situaciones adversas. </p>
 						<p> Busco un lugar donde pueda demostrar el conocimiento y la experiencia adquirida estos 6 años en el uso de los sistemas nativo, así como las distintas modalidades de facturación digital y los lenguajes de programación en los cuales me he estado formando, pudiendo fortalecer una mejora contínua dentro del mundo IT beneficiando a la mutual con mi desempeño.
+						</p>
+					</div>
+					<div id="english" class="sectionContent">
+						<p> Enjoy work team, friendship papfrita en ingles ingles ingles Lorem ipsum dolor sit, amet consectetur ad </p>
+						<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet quaerat eius at. Soluta nemo ex placeat repellat optio saepe, veniam libero sunt exercitationem voluptatibus cumque, voluptatem sapiente, dicta tenetur!
 						</p>
 					</div>
 				</article>
@@ -110,7 +142,7 @@
 					<h1>Habilidades</h1>
 				</div>
 				<div class="sectionContent">
-					<ul class="keySkills">
+					<ul id="keySkills" class="keySkills">
 						<li>HTML5</li>
 						<li>CSS3</li>
 						<li>BOOTSTRAP</li>
@@ -133,24 +165,30 @@
 					<h1>Trabajos IT y relacionados</h1>
 				</div>
 			<div class="sectionContent">
-  			 <ul class="keySkills-jobs">
-    			<li><b><a href="https://franferfain.github.io/greentreasaure/" target="_blank">GREEN TREASAURE</a></b>
-    			<p> Pyme con ventas en AMAZON <br>
-    				<!-- <a href="https://bootstrapmade.com/mentor-free-education-bootstrap-theme/" target="_blank">Template original</a></p> -->
+  			 <ul id="keySkills" class="keySkills-jobs">
+    			<li>
+					<h2><b>
+						<a href="https://franferfain.github.io/greentreasaure/" target="_blank">GREEN TREASAURE</a></b></h2>
+    						<p> Pyme con ventas en AMAZON <br>
  				</li>
-			
-
-			<li>
-    			<h4><b><a href="https://franferfain.github.io/Capital-Santa-Fe/">CAPITAL SANTA FE</a></b></h4>
-    			<p> ARQ & CONST de Santa Fe <br>
-    		<!-- 	<a href="https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/" target="_blank">Template original</a></p> -->
-    			
- 			</li>
+				<li>
+    				<h2><b>
+						<a href="https://franferfain.github.io/Capital-Santa-Fe/">CAPITAL SANTA FE</a></b></h4>
+    						<p> ARQ & CONST de Santa Fe <br>    			
+ 				</li>
 				
-			<li>
-    			<h4><b><a href="https://www.instagram.com/tecnoshield.sf/">TECNOSHIELD.SF</a></b></h4>
-    			<p> Pyme personal de servicio técnico informático, reparación y actualización de equipos.</p>
-    		</li>
+				
+				<li>
+    				<h2><b>
+						<a href="https://franferfain.github.io/Clima/">Clima API</a></b></h4>
+    						<p>App para consultar el clima consumiendo una API con vanilla JS</p>
+    			</li>
+				<li>
+    				<h2><b>
+						<a href="https://www.instagram.com/tecnoshield.sf/">TECNOSHIELD.SF</a></b></h4>
+    						<p> Pyme personal de servicio técnico informático, reparación y actualización de equipos.</p>
+    			</li>
+		
  			</ul>
 			</div>
 			</section>
@@ -216,5 +254,12 @@
 			</section>
 		</div>
 	</div>
+
+	<div>
+		<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+			<i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+		</a>
+	</div>	
 </body>
+
 </html>

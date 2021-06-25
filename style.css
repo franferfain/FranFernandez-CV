@@ -11,26 +11,29 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display:block;
 }
 
-html, body {
-	background: #181818;
+ body {
+	--color-bg: #fff;
 	font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px; color: #222;
+  font-size: 16px; 
+  --color-texto: #000066;
+}
+.english #spanish {
+	display: none;
 }
 
-/* colors
-#999999
-#000066
-#666666
- */
+#english {
+	display: none;
+}
 
- /*
- font-family: 'Oswald', sans-serif;
- font-family: 'Roboto Condensed', sans-serif;
- font-family: 'Source Code Pro', monospace;
- */
+.english #english {
+	display:contents ;
+}
+.dark-mode {
+	background: #181818 !important;
+	--color-texto: coral;
+}
 
 .clear {clear: both;}
-
 
 p {
 	font-size: 0.8em;
@@ -38,20 +41,39 @@ p {
 	margin-bottom: 20px;
 	color: #444;
 }
+
+.dark-mode p{
+	color:#dedede
+}
 article p{
 	font-family: 'Source Code Pro', monospace;
 }
 #cv {
 	width: 90%;
 	max-width: 800px;
-	background: #fff;
+	/* background: #fff; */
 	margin: 30px auto;
 }
 
+.btn-primary {
+	border-radius: 4px !important;
+	background-color: #000066 !important;
+	width: 100% !important;
+	font-weight: 700;
+}
+
+.dark-mode button {
+	background-color: coral !important;
+	color: #181818 !important;
+}
 .mainDetails {
 	padding: 25px 35px;
-	border-bottom: 2px solid #000066;
-	background: #fff;
+	border-bottom: 2px solid var(--color-texto);
+	/* background: #fff; */
+}
+
+.left {
+	float: left;
 }
 
 #name h1 {
@@ -60,6 +82,7 @@ article p{
 	font-family: 'Oswald', sans-serif;
 	margin-bottom: -6px;
 	text-transform: uppercase;
+	color:var(--color-texto);
 }
 
 #name h2 {
@@ -67,16 +90,19 @@ article p{
 	margin-left: 2px;
 	font-family: 'Oswald', sans-serif;
 }
+.dark-mode h2{
+	color: #dedede;
+}
 
 #mainArea {
 	padding: 0 40px;
 }
 span {
-	color: #000066
+	color: var(--color-texto);
 }
 
 #headshot {
-	width: 12.5%;
+	width: 14.5%;
 	float: left;
 	margin-right: 30px;
 }
@@ -86,6 +112,10 @@ span {
 	height: auto;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+}
+
+.dark-mode img {
+	box-shadow: 0px 0px 5px coral;
 }
 
 #name {
@@ -111,6 +141,13 @@ span {
 	color: #444;
 }
 
+.dark-mode a, a[href^=tel]{
+	color:coral
+}
+.dark-mode ul li{
+	color:#dedede;
+}
+
 #contactDetails ul li a, a[href^=tel] {
 	color: #444;
 	text-decoration: none;
@@ -121,8 +158,17 @@ span {
 	transition: all .3s ease-in;
 }
 
+.dark-mode #contactDetails ul li {
+		color:#bdbaba
+	}
+
+	.dark-mode #contactDetails a, a[href] {
+		color:#bdbaba
+	}
+
+
 #contactDetails ul li a:hover {
-	color: #000066;
+	color: var(--color-texto);
 }
 
 
@@ -153,12 +199,13 @@ section:last-child {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	font-size: 1.3em;
-	color: #000066;
+	color: var(--color-texto);
 }
 
 .sectionContent h2 {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 1.1em;
+	font-weight: 700;
 }
 .sectionContent h2 span {
 	font-style: italic;
@@ -172,6 +219,10 @@ section:last-child {
 	text-transform: uppercase;
 }
 
+.dark-mode #subDetails{
+	color:#bdbaba
+}
+
 .keySkills {
 	list-style-type: none;
 	-moz-column-count:3;
@@ -180,11 +231,17 @@ section:last-child {
 	margin-bottom: 20px;
 	font-size: 1em;
 	color: #444;
+	font-weight: 500;
+}
+
+.dark-mode #keyskills{
+	color:#bdbaba
 }
 
 .keySkills ul li {
 	margin-bottom: 3px;
 }
+
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
@@ -262,32 +319,28 @@ section:last-child {
     clear: both;
     display: table;
 }
-[class*="col-"] {
-    float: left;
-    padding: 15px;
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+	background-color: var(--color-texto);
+	color: var(--color-bg);
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+
+
+
 html {
     font-family: "Lucida Sans", sans-serif;
 }
 .header {
     background-color: #9933cc;
-    color: #ffffff;
+    color: var(--color-bg);
     padding: 15px;
 }
 .menu ul {
-	background: ;
     margin: 0;
     padding: 0;
 }
@@ -302,12 +355,6 @@ html {
     background-color: #0099cc;
 }
 
-/*--------------ESTO ES UNA PRUEBA MIA( TRATANDO DE BUSCAR EL PROBLEMA--------------------*/
-.box-1{background: orange;float: right;}
-.box-2{background: darkgreen;}
-.box-3{background: darkred;}
-.box-4{background: darkblue;}
-.box-5{background: teal;}
 .box-1,.box-2,.box-3,.box-4,.box-5{
   color: white;
   font-size: 1.12em;
@@ -318,12 +365,6 @@ html {
   .col-5{
     width: 2%;
   }
-  .col-7{
-
-  }
-  .box-1{
-    background: red;
-  } 
 }
 
 @media print {
