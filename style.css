@@ -75,6 +75,7 @@ article p{
 .mainDetails {
 	padding: 0px 25px;
 	border-bottom: 2px solid var(--color-texto);
+	height: 182px;
 
 }
 
