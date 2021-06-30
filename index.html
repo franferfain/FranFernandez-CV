@@ -34,7 +34,7 @@
 				<a class="btn btn-social-icon btn-github" href="https://github.com/franferfain" target="_blank">
 					<span class="fa fa-github"></span>
 				</a>
-				<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/francisco-fernandez-788b67142/" target="_blank">
+				<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/franferfain/" target="_blank">
 					<span class="fa fa-linkedin"></span>
 				</a>
 				<a class="btn btn-social-icon btn-envelope" href="mailto:franferfain@gmail.com" target="newtab">
@@ -54,7 +54,18 @@
 							<button class="btn-primary btn-block" onclick="english()">English Version</button>
 						</div>
 					</li>
-
+					<li>
+						<div class="form-check form-switch no-print">
+							<button id="spanish" class="btn-primary btn-block" type="submit" onclick="window.open('FranciscoFernandezCv.pdf')">Descargar CV</button>
+							<button id="english" class="btn-primary btn-block" type="submit" onclick="window.open('FranciscoFernandezCvEn.pdf')">Download CV</button>
+						</div>
+					</li>			
+				</ul>
+				<ul id="info">
+					<li>e: <a  href="mailto:franferfain@gmail.com">franferfain@gmail.com</a></li>
+					<li>g: <a href="https://www.github.com/franferfain">github.com/franferfain</a></li>
+					<li>l: <a href="https://www.linkedin.com/in/franferfain/">linkedin.com/in/franferfain</a></li>
+					<li><a>Santo Tome, Santa Fe, Argentina</a></li>
 				</ul>
 				
 			</div>
@@ -69,12 +80,14 @@
 						<h1 id="english">Personal Information</h1>
 					</div>
 					<div id="spanish" class="sectionContent">
-						<p> Disfruto el trabajo en equipo, soy amigable y honesto; colaboro con mis compañeros y tomo la iniciativa frente a situaciones adversas. </p>
-						<p>	Estoy buscando un puesto donde pueda usar mi conocimiento y experiencia para entregar productos de calidad, seguir mejorando como desarrollador y aprendiendo nuevas tecnologías.</p>
+						<p> Soy un a persona creativa y curiosa que disfruta el trabajo en equipo, amigable y honesto; me gusta colaborar con mis compañeros y tomar la iniciativa frente a situaciones adversas. </p>
+						<p>	Estoy buscando un puesto donde pueda usar mi conocimiento y experiencia para realizar productos de calidad, mejorando como desarrollador y aprender nuevas tecnologías.</p>
+						<p>	En mis tiempos libres, amo compartir momentos en familia y con amigos, planear viajes o disfrutar del aire libre.</p>
 					</div>
 					<div id="english" class="sectionContent">
-						<p> I enjoy teamwork, I am friendly and honest; I collaborate with my colleagues and take the initiative in adverse situations. </p>
-						<p>I'm looking for a position where I can use my knowledge and experience to deliver quality products, keep improving as a developer and learn new technologies.</p>
+						<p> I'm a creative and restless web developer, always looking for new challenges and focused on learning new tecnologies; I love collaborate with my colleagues and take the initiative in adverse situations. </p>
+						<p>Currently, i'm looking for a position where I can use my knowledge and experience to deliver quality products, keep improving as a developer.</p>
+						<p>Passionated about traveling and family time to enjoy lovely moments</p>
 					</div>
 				</article>
 				<div class="clear"></div>
@@ -84,41 +97,48 @@
 						<h1 id="spanish">Trabajos IT y relacionados</h1>
 						<h1 id="english">IT Experience</h1>
 					</div>
-				<div class="sectionContent">
+				<div class="sectionContent left row">
+					<div class="col-6" row>
 				   <ul id="keySkills" class="keySkills-jobs">
 					<li>
-						<h2><b>
+						<h2>
 							<a href="https://franferfain.github.io/Capital-Santa-Fe/" target="_blank">CAPITAL SANTA FE</a></b></h4>
 								<p id="spanish"> ARQ & CONST de Santa Fe <br>
 								<p id="english"> ARQ & CONST of Santa Fe city <br>    			
 					</li>				
 					<li>
-						<h2><b>
+						<h2>
 							<a href="https://franferfain.github.io/Clima/">Clima API</a></b></h4>
-								<p id="spanish">App para consultar el clima consumiendo una API con vanilla JS</p>
-								<p id="english">App to check the weather by consuming data from an API</p>
+								<p id="spanish">App clima con vanilla JS</p>
+								<p id="english">Wheater App with JS</p>
 					</li>
+					</ul>
+
+				</div>
+				<div class="col-6">
+					<ul>
 					<li>
-						<h2><b>
+						<h2>
 							<a href="https://franferfain.github.io/greentreasaure/" target="_blank">GREEN TREASAURE</a></b></h2>
-								<p id="spanish"> Pequeña Pyme argentina con ventas en AMAZON <br>
-								<p id="english"> Small argentinian SME from AMAZON <br>
+								<p id="spanish"> Pyme argentina con ventas en AMAZON <br>
+								<p id="english"> Argentinian SME AMAZON seller <br>
 					</li>
 					<li>
-						<h2><b>
+						<h2>
 							<a href="https://www.instagram.com/tecnoshield.sf/" target="_blank">TECNOSHIELD.SF</a></b></h4>
-								<p id="spanish">Pequeña Pyme personal de servicio técnico informático, reparación y actualización de equipos.</p>
-								<p id="english">Small own SME of computer technical services</p>
+								<p id="spanish">Servicio técnico informático</p>
+								<p id="english">Computer technical services</p>
 					</li>
 			
 				 </ul>
+				</div>
 				</div>
 				</section>
 					<div class="clear"></div>
 			<section>
 				<div class="sectionTitle">
 					<h1 id="spanish">Experiencia Laboral</h1>
-					<h1 id="english">Work Experience</h1>
+					<h1 id="english">Works</h1>
 				</div>
 
 				<div class="sectionContent">
@@ -135,7 +155,7 @@
 					<article>
 						<h2>Pilates Park, Santa Fe, Argentina:<br>
 							<span id="english">Pilates and TRX instructor</span>
-							<span id="spanish">instructor de Pilates y TRX </span>	</h2>
+							<span id="spanish">Instructor de Pilates y TRX </span>	</h2>
 						<p id="english" class="subDetails">Dec 2012 to Jan 2015</p>
 						<p id="spanish" class="subDetails">Dic 2012 a Ene 2015</p>
 						<p> Trx, Pilates and social media marketing</p>
@@ -146,7 +166,7 @@
 							<span id="spanish">Venta y reparaciones</span></h2>
 						<p class="subDetails" id="english">Dec 2010 to Jan 2015</p>
 						<p class="subDetails" id="spanish">Dic 2010 a Ene 2015</p>
-						<p id="english"> Family business in medicine products </p>
+						<p id="english"> SME in medicine products </p>
 						<p id="spanish"> Empresa Familiar de productos médicos </p>
 					</article>					
 					
@@ -177,7 +197,7 @@
 						<li>Gsuite</li>
 					</ul>
 					<p id="spanish" class="subDetails"><span>*</span> Tecnologías en formación.</p>
-					<p id="english" class="subDetails"><span>*</span> Learning actually.</p>
+					<p id="english" class="subDetails"><span>*</span> Currently learning.</p>
 				</div><br>
 
 				<div class="clear"></div>
@@ -191,8 +211,12 @@
 				</div>
 				<div class="sectionContent">
 					<article>
-						<h2>FULL STACK DEVELOPER</h2>
-						<p>HTML5, CSS3, JAVASCRIPT, REACT y FIREBASE, Escuela Dev Rock, Jonatan Ariste.</p>
+						<h2>Curso de JAVASCRIPT</h2>
+						<p>Escuela Dev Rock - Jonatan Ariste.</p>
+					</article>
+					<article>
+						<h2>Curso de Html y CSS</h2>
+						<p>Escuela Dev Rock - Jonatan Ariste.</p>
 					</article>
 					<article>
 						<h2>HTML: Introduccion completa a Html y Html 5</h2>
@@ -203,12 +227,8 @@
 						<p>Scrumstudy</p>
 					</article>
 					<article>
-						<h2>HTML for Babies</h2>
-						<p>Escuela Dev Rock, Jonatan Ariste.</p>
-					</article>
-					<article>
-						<h2>Cursos varios</h2>
-						<p>Introducción al desarrollo web, formación para developers, diseño web, UX/UI básico, entre otros.</p>
+						<h2>Github para Programadores</h2>
+						<p>Linkedin, Carlos Solís.</p>
 					</article>
 				</div>
 				<div class="clear"></div>
@@ -240,7 +260,7 @@
 				</div>
 				<div class="clear"></div>
 			</section>
-			<section>
+			<!-- <section>
 				<div class="sectionTitle">
 					<h1 id="spanish">INTERESES</h1>
 					<h1 id="english">LifeStyle</h1>
@@ -254,7 +274,7 @@
 					</article>
 				</div>
 				<div class="clear"></div>
-			</section>
+			</section> -->
 		</div>
 	</div>
 
